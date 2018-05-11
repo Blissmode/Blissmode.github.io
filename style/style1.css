@@ -68,8 +68,12 @@ p:hover {
 }
 
 #Intro  {
-    text-align: left;
+    text-align: center;
     font-size: 40px;
     font: arial;
-    color: white;
+    color: purple;
+}
+
+#small {
+    font-size: 2vw;
 }
