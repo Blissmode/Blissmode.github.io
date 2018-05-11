@@ -8,6 +8,7 @@ body {
     background:black;
     height: 30px;
     width : 100%;
+    position: fixed;
 }
 
 center {
@@ -64,4 +65,11 @@ p {
 
 p:hover {
     font-size: 8vw;
+}
+
+#Intro  {
+    text-align: left;
+    font-size: 40px;
+    font: arial;
+    color: white;
 }
