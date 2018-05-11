@@ -39,3 +39,85 @@ li a:hover {
 .active {
     background: red;
 }
+
+div.container {
+    position: absolute;
+    top: 90px;
+    right: 100px;
+    max-width: 500px;
+    max-height: 800px;
+    background: white;
+    border: 10px solid darkblue;
+    border-radius: 8px;
+}
+
+p {
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    font: 100 20px 'Merienda One', Helvetica, sans-serif;
+    color: lightblue;
+}
+
+div.contact {
+    width: 100%;
+}
+
+#fb {
+    font-size: 40px;
+    width: 20%;
+    color: blue;
+    -webkit-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+#gplus {
+    font-size: 40px;
+    width: 20%;
+    color: red;
+    -webkit-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+#insta {
+    font-size: 40px;
+    width: 18%;
+    color: pink;
+    -webkit-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+#lin {
+    font-size: 40px;
+    width: 18%;
+    color: blue;
+    -webkit-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+#ghub {
+    font-size: 40px;
+    width: 18%;
+    color: black;
+    -webkit-transition: font-size 0.5s;
+    transition: font-size 0.5s;
+}
+
+#fb:hover {
+    font-size: 50px;
+}
+
+#insta:hover {
+    font-size: 50px;
+}
+
+#ghub:hover {
+    font-size: 50px;
+}
+
+#gplus:hover {
+    font-size: 50px;
+}
+
+#lin:hover {
+    font-size: 50px;
+}
