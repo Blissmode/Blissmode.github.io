@@ -1,0 +1,41 @@
+body {
+    background-image:url(../images/me.jpg);
+    background-repeat: repeat-y;
+    background-size:cover;
+}
+
+#navigation {
+    background:black;
+    height: 30px;
+    width : 100%;
+    position: fixed;
+}
+
+ul {
+    list-style-type: none;
+    background: black;
+    width: auto;
+    margin:0;
+    padding: 0;
+}
+
+li a {
+    text-align: center;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    background: black;
+    width:25%;
+    float: left;
+    font-size: 20px;
+}
+
+li a:hover {
+    background:darkgray;
+    text-align: center;
+}
+
+.active {
+    background: red;
+}
