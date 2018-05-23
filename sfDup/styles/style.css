@@ -68,17 +68,24 @@ NAVIGATION RELATED CSS HERE
 }
 
 
-ul li a{
+.navleft li a{
     position: relative;
-    top: 5px;
-    padding: 0px 20px;
+    top: -2px;
+    padding: 2px 20px;
     text-decoration: none;
     font-weight: bold;
     color: white;
     height: 69px;
     text-align: left;
     display: block;
+}
+
+.navleft li a p {
     position: relative;
+    top: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;  
 }
 
 .navleft li a:hover {
@@ -127,10 +134,7 @@ ul li a{
     border: 1px solid #181818;
     border-bottom: 1px solid #000;
     border-top: 1px solid #2d2d2d;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
-    -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.40), inset 0 1px 0 rgba(255,255,255,0.20);
     box-shadow: 0 0 2px 0 rgba(0,0,0,0.40), inset 0 1px 0 rgba(255,255,255,0.20);
     display: block;
     line-height: 18px;
@@ -154,6 +158,16 @@ ul li a{
     float: right;
     height: 69;
 }
+.navright li a {
+	display: block;
+    padding-top: 0px;
+    padding-left: 15px;
+    margin: 0;
+    color: white;
+    height: 36px;
+    background: transparent url(../images/nwnav.png) repeat-x;
+}
+
 .navright li a {
 	display: block;
     padding-top: 0px;
