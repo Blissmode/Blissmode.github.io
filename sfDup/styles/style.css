@@ -147,7 +147,6 @@ ul li a{
 	font-size: 14px;
 	font-weight: bold;
     margin-left: 8px;
-    background: transparent url(./Images/joinbg.png) repeat-x;
 }
 
 
@@ -161,8 +160,12 @@ ul li a{
     padding-left: 15px;
     margin: 0;
     height: 36px;
+    background: transparent url(../images/nwnav.png) repeat-x;
 }
 
+.navright li a:hover {
+    background: transparent url(../images/nwhover.png) repeat;
+}
 
 /*/////////////////////////////////////////////////////////
 
@@ -495,11 +498,31 @@ select {
 #submit:hover {
     background: url(../images/join.png) no-repeat 0px -40px;
 }
+
+
+
+
+
+
+
+
+
 /*/////////////////////////////////////////////////////////
 
 AT A GLANCE RELATED CSS HERE
 
 /////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
 
 .bottomboxtop {
     background: transparent url(../images/learnboost_sprite.png) no-repeat 0% -650px;
@@ -524,17 +547,192 @@ AT A GLANCE RELATED CSS HERE
     margin-bottom: 20px;
 }
 
+.features {
+    width: 480px;
+    margin: 0 0 30px 0;
+}
+
+.gradebookpic {
+    display: block;
+    width: 0px;
+    height: 80px;
+    padding-left:100px;
+    margin-bottom: 25px;
+    background: transparent url(../images/learnboost_sprite_home.png) no-repeat -1220px 0px;
+    float: left;
+}
+
+.lessonpic {
+    display: block;
+    width: 0px;
+    height: 80px;
+    padding-left:100px;
+    margin-bottom: 25px;
+    background: transparent url(../images/learnboost_sprite_home.png) no-repeat -1220px -100px;
+    float: left;
+}
+
+.parentpic {
+    display: block;
+    width: 0px;
+    height: 80px;
+    padding-left:100px;
+    margin-bottom: 25px;
+    background: transparent url(../images/learnboost_sprite_home.png) no-repeat -1220px -200px;
+    float: left;
+}
+
+
+.bottomtext {
+    display: block;
+    margin-left: 115px;
+    max-width: 365px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.bottomtext h2 {
+    text-align: left;
+}
+
+.bottomtext h2 a{
+    position: absolute;
+    max-width: 365px;
+    font: lighter 20px/24px Helvetica;
+    text-align: left;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.bottomtext h2 a:hover {
+    text-decoration: underline;
+}
+
+.bottomtext p {
+    position: relative;
+    top: 20px;
+    font: lighter 16px/20px Helvetica;
+    margin: 0;
+    padding-right: 20px;
+}
+
+.bottomtext p a {
+    color: #4096e7;
+    font-weight: bold;
+    font-size: 12px;
+    padding-right: 33px;
+    text-transform: uppercase;
+}
+
+.bottomtext p a:hover {
+    background: transparent url(../images/learnboost_sprite_home.png) no-repeat right -400px;
+}
+
+.bottomtext hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    height: 0;
+    margin-top: 40px;
+}
 
 
 
-
-
-
-
-
+#container .bottomboxbot {
+    background: transparent url(../images/learnboost_sprite.png) no-repeat 0% -670px;
+    height: 25px;
+    width: 907px;
+    margin-bottom: 10px;
+}
 
 /*/////////////////////////////////////////////////////////
 
 FOOTER RELATED CSS HERE
 
 /////////////////////////////////////////////////////////*/
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+#footer {
+    border: 0;
+    color: #5e838b;
+    font-size: 11px;
+    height: 1%;
+    margin: 0 auto 40px;
+    padding-left: 20px;
+    text-shadow: rgba(255,255,255,0.00) 1px 1px 1px;
+    width: 895px;
+}
+
+#footer ul li {
+    float: left;
+    line-height: 14px;
+    padding: 0 10px;
+    width: 100px;
+}
+
+#footer ul li ul {
+    padding: 0;
+    margin: 0;
+}
+#footer ul li ul li {
+    float: none;
+    padding: 0;
+    width: 70px;
+}
+
+#footer ul li ul li a {
+    color: #6e99a2;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    height: 14px;
+    font-weight: normal;
+}
+
+
+.feedback-container {
+    width: 30px;
+    height: 130px;
+    position: fixed;
+    left: 0px;
+    top: 40%;
+    z-index: 1000000007;
+    background: transparent url(../images/feedback.png) no-repeat;
+    overflow: hidden;
+}
+
+
+.feedback {
+    transform: rotate(90deg);
+    color: #fff;
+    padding-left: 28px;
+    text-shadow: 0 1px 0 #000;
+    font-family: Helvetica;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
