@@ -1,0 +1,540 @@
+body {
+    background-image:url(../images/mainBackground.gif);
+    background-repeat: repeat-x;
+    background: #d7f2f9;
+    color: #454545;
+    margin: 0;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+p {
+    display: block;
+    margin-top: 0  !important;
+    margin-bottom:0 !important;
+    padding: 5px;
+}
+
+div {
+    display: block;
+}
+
+
+/*/////////////////////////////////////////////////////////
+
+NAVIGATION RELATED CSS HERE
+
+/////////////////////////////////////////////////////////*/
+
+#navigation {
+    margin: 0;
+    width: 100%;
+    height: 69px;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    background-image:url(../images/navbar.png);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.40), inset 0 1px rgba(255,255,255,0.10);
+    z-index: -1;
+}
+
+#navcontent {
+    margin: 0;
+    width: 940px;
+    height: 69px;
+    margin: auto;
+    text-align: left;
+    position: relative;
+    top: 0px;
+}
+
+#nav {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    height: 69px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+ul li a{
+    position: relative;
+    top: 5px;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    height: 69px;
+    text-align: left;
+    display: block;
+    position: relative;
+}
+
+.navleft li a:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+#logo {
+    position: relative;
+    top: 5px;
+    left: -7px;
+}
+.navleft {
+    list-style-type: none;
+    margin-left: 30px;
+    position: relative;
+    top: -19px;
+}
+
+.navleft li {
+    padding: 0 20px;
+    font-family: Helvetica;
+    float: left;
+    overflow: hidden;
+    text-shadow: 0 1px 1px #000;
+    display: block;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid grey;
+}
+
+.navleft li:first-child{
+    border-left: 1px solid grey;
+}
+
+.navright {
+	list-style-type: none;
+	position: relative;
+	text-decoration: none;
+	color: white;
+    height: 36px;
+    width: 300px;
+}
+
+.navright li {
+    border: 1px solid #181818;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #2d2d2d;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.40), inset 0 1px 0 rgba(255,255,255,0.20);
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.40), inset 0 1px 0 rgba(255,255,255,0.20);
+    display: block;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 0 0;
+
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.40);
+    float: right;
+	height: 36px;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 14px;
+	font-weight: bold;
+    margin-left: 8px;
+    background: transparent url(./Images/joinbg.png) repeat-x;
+}
+
+
+#buttons {
+    float: right;
+    height: 69;
+}
+.navright li a {
+	display: block;
+    padding-top: 0px;
+    padding-left: 15px;
+    margin: 0;
+    height: 36px;
+}
+
+
+/*/////////////////////////////////////////////////////////
+
+FORM WALA DIV RELATED CSS HERE
+
+/////////////////////////////////////////////////////////*/
+
+
+.deco {
+    background: transparent url(../images/learnboost_sprite.png) no-repeat 0 -100px;
+    height: 532px;
+    margin: 0 auto;
+    width: 787px;
+}
+
+#container {
+    margin: -532px auto 0;
+    position: relative;
+    width: 905px;
+}
+
+#content {
+    margin-top: 40px;
+    height: 425px;
+    width: 905px;
+}
+
+#container #content .upperboxtop {
+    background: transparent url(../images/learnboost_sprite_home.png) no-repeat 0% 0%;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: -20px;
+    width: 905px;
+
+}
+
+#container #content .upperboxbot {
+    background: transparent url(../images/learnboost_sprite_home.png) no-repeat 0% 100%;
+    bottom: -10px;
+    height: 212px;
+    left: 0;
+    position: absolute;
+    width: 905px;
+    z-index: 1;
+}
+
+.title {
+    text-align: center;
+}
+
+.upperboxform {
+    background: transparent url(../images/upperboxbg.png) repeat-y;
+    position: relative;
+    width: 508px;
+    min-height: 405px;
+    padding: 20px 367px 0 30px;
+}
+
+@font-face {
+	font-family: museo-slab-1;
+	src: url('../fonts/ms700.ttf');
+}
+
+@font-face {
+	font-family: museo-slab-2;
+	src: url('../fonts/ms300.ttf');
+}
+
+h1 {
+    color: #ce2654;
+    font: 700 26px/40px "museo-slab-1","museo-slab-2",serif;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 52px;
+    text-shadow: #fff 0 1px 0;
+    line-height: 47px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #ce2654;
+    font: 700 26px/40px "museo-slab-1","museo-slab-2",serif;
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 52px;
+    text-shadow: #fff 0 1px 0;
+    line-height: 47px;
+    padding: 0;
+}
+
+.formtext {
+    text-shadow: #fff 0 1px 0;
+    padding: 0;
+    margin: 0 40px;
+    text-align: center;
+    font: 300 23px/29px "museo-slab-2","museo-slab-1",serif;
+}
+
+#container #content .demo {
+    position: relative;
+    height: 50px;
+    margin-top: 22px;
+    text-align: center;
+    z-index: 3;
+}
+
+a.demobutton {
+    width: 143px;
+    height: 51px;
+    background: transparent url(../images/demo_sprite.png) 0px 0px;
+    margin: 0 7px;
+    display: inline-block;
+    z-index: 3;
+}
+
+a.demobutton:hover {
+    background: transparent url(../images/demo_sprite.png) -299px 0px;
+}
+
+a.vidbutton {
+    width: 143px;
+    height: 51px;
+    background: transparent url(../images/demo_sprite.png) -156px 0px;
+    margin: 0 7px;
+    display: inline-block;
+}
+
+a.vidbutton:hover {
+    background: transparent url(../images/demo_sprite.png) -455px 0px;
+}
+
+form.signup {
+    background: url(../images/ribbon.png) no-repeat 0% 0%;
+    height: 355px;
+    padding-left: 29px;
+    padding-right: 27px;
+    position: absolute;
+    right: -11px;
+    top: -10px;
+    width: 310px;
+}
+
+.formtop {
+    background: #add133;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border: 1px solid #7c9c1d;
+}
+
+.signuptext {
+    text-align: center;
+    border-top-right-radius: 6px;
+    height: 53px;
+}
+
+.sutext {
+    padding: 13px 0px;
+    border-top: 1px solid #d5e79a;
+    font: bold 25px Helvetica,Arial;
+    text-shadow: 0 1px 0 #fff;
+    color: #2b2b2b;
+}
+
+.formcontent {
+    display: inline-block;
+    border-width: 0 1px 1px 1px;
+    border-color: #c3c4c4;
+    border-style: solid;
+    background: transparent url(../images/formbody.png);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: relative;
+    z-index: 4;
+}
+
+a.fbsignup {
+    display: inline-block;
+    width: 132px;
+    height: 24px;
+    margin: 11px 5px 11px 16px;
+    background: transparent url(../images/signup_sprite.png) 0px 0px;
+} 
+
+
+.social {
+    height: 52px;
+    border-bottom: 1px solid #c8c8c8;
+}
+a.gsignup {
+    display: inline-block;
+    width: 118px;
+    height: 24px;
+    margin: 11px 17px 11px 16px;
+    background: transparent url(../images/signup_sprite.png) -132px 0px;
+} 
+
+.or {
+    font-family: Georgia;
+    position: absolute;
+    top: 44px;
+    left: 140px;
+    padding: 0 10px;
+    font-size: 13px;
+    font-style: oblique;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.details {
+    border-top: 1px solid #c8c8c8;
+    padding: 15px 16px 8px 16px;
+}
+
+input {
+    font: 400 13.3333px Arial;
+}
+
+label {
+    font-family: Georgia;
+    font-size: 11px;
+    font-style: oblique;
+    padding-left: 2.4px;
+}
+
+.name {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+#fn{
+    width: 130px;
+    float: left;
+    margin-right: 10px;
+}
+
+#sn {
+    width: 130px;
+    float: left;
+}
+.name #fn input {
+    border: 1px solid #ababab;
+    width: 50%;
+    background: #fff;
+    box-sizing: border-box;
+    width: 130px;
+    height: 32px;
+    margin: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: block;
+    margin-right: 0px !important;   
+}
+
+.name #sn input {
+    border: 1px solid #ababab;
+    background: #fff;
+    box-sizing: border-box;
+    width: 130px;
+    height: 32px;
+    margin: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: block;
+    margin-right: 0px !important;   
+}
+
+.cred input{
+    border: 1px solid #ababab;
+    background: #fff;
+    box-sizing: border-box;
+    width: 180px;
+    height: 32px;
+    margin-bottom: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: block;
+}
+
+select {
+    display: inline-block;
+    background: url(../images/dropdown.png) no-repeat left 0,
+    url(../images/dropdown.png) no-repeat right -72px,
+    url(../images/dropdown.png) repeat-x left -36px;
+    font-size: 13px;
+    border: 0;
+    padding: 0 60px 0 12px;
+    height: 31px;
+    border-radius: 8px;
+    box-shadow: 0 1px 0 #fff;
+}
+
+.dropdown {
+    margin-bottom: 10px;
+}
+
+.checkbox label {
+    font-family: Georgia;
+    font-size: 12px;
+    font-style: normal;
+    padding-left: 2.4px;
+    margin-bottom: 10px;
+}
+
+.tac {
+    padding: 2px 16px 10px;
+    padding-top: 5px;
+    font-size: 11px;
+    color: #595959;
+    text-shadow: 0 1px 0 #fff;
+    margin-bottom: 15px;
+}
+
+#submit {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: -5px;
+    width: 100px;
+    height: 40px;
+    line-height: 36px;
+    cursor: pointer;
+    background: url(../images/join.png) no-repeat 0px 0px;
+    border: 0;
+    font-size: 13px;
+    margin-bottom: 10px; 
+    margin-left: 10px;
+}
+
+#submit:hover {
+    background: url(../images/join.png) no-repeat 0px -40px;
+}
+/*/////////////////////////////////////////////////////////
+
+AT A GLANCE RELATED CSS HERE
+
+/////////////////////////////////////////////////////////*/
+
+.bottomboxtop {
+    background: transparent url(../images/learnboost_sprite.png) no-repeat 0% -650px;
+    height: 20px;
+    width: 907px;
+    position: relative;
+    top: 20px;
+}
+
+#glance {
+    position: relative;
+    top: 16px;
+    background: transparent url(../images/bottomboxbg.png) repeat-y;
+    width: 907;
+    height: 553;
+    padding: 0px 17px 10px 44px;
+}
+
+#glance h1 {
+    text-align: left;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////
+
+FOOTER RELATED CSS HERE
+
+/////////////////////////////////////////////////////////*/
