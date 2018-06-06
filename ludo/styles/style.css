@@ -1,0 +1,194 @@
+body {
+    background: skyblue;
+}
+
+.container {
+    width: 100%;
+    margin: 20px 10px;
+}
+
+.square {
+    display: inline-block;
+    border: 1px solid black;   
+}
+
+.jumbotron {
+    margin: auto;
+}
+
+.arena {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,100px);
+}
+
+#turnOf {
+    grid-column: 4 /span 2;
+    grid-row: 4/ span 1;
+    margin: auto auto;
+}
+
+#roll {
+    grid-column: 4 /span 2;
+    grid-row: 5 / span 1;
+    margin: 10px 5px;
+}
+
+#rollResult {
+    grid-column: 4 /span 2;
+    grid-row: 6 / span 1;
+    margin: 10px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sq1 {
+    grid-column: 1 /span 1;
+    grid-row: 1 /span 1;
+}
+
+#sq2 {
+    grid-column: 2 /span 1;
+    grid-row: 1 /span 1;
+}
+
+#sq3 {
+    grid-column: 3 /span 1;
+    grid-row: 1 /span 1;
+}
+
+#sq4 {
+    grid-column: 4 /span 1;
+    grid-row: 1 /span 1;
+}
+
+#sq5 {
+    grid-column: 5 /span 1;
+    grid-row: 1 /span 1;
+}
+
+#sq6 {
+    grid-column: 6 /span 1;
+    grid-row: 1 /span 1;
+}
+
+#sq7 {
+    grid-column: 7 /span 1;
+    grid-row: 1 /span 1;
+}
+
+#sq8 {
+    grid-column: 8 /span 1;
+    grid-row: 1 /span 1;
+}
+
+#sq9 {
+    grid-column: 8 /span 1;
+    grid-row: 2 /span 1;
+}
+
+#sq10 {
+    grid-column: 8 /span 1;
+    grid-row: 3 /span 1;
+}
+
+#sq11 {
+    grid-column: 8 /span 1;
+    grid-row: 4 /span 1;
+}
+
+#sq12 {
+    grid-column: 8 /span 1;
+    grid-row: 5 /span 1;
+}
+
+#sq13 {
+    grid-column: 8 /span 1;
+    grid-row: 6 /span 1;
+}
+
+#sq14 {
+    grid-column: 8 /span 1;
+    grid-row: 7 /span 1;
+}
+
+#sq15 {
+    grid-column: 8 /span 1;
+    grid-row: 8 /span 1;
+}
+
+#sq16 {
+    grid-column: 7 /span 1;
+    grid-row: 8 /span 1;
+}
+
+#sq17 {
+    grid-column: 6 /span 1;
+    grid-row: 8 /span 1;
+}
+
+#sq18 {
+    grid-column: 5 /span 1;
+    grid-row: 8 /span 1;
+}
+
+#sq19 {
+    grid-column: 4 /span 1;
+    grid-row: 8 /span 1;
+}
+
+#sq20 {
+    grid-column: 3 /span 1;
+    grid-row: 8 /span 1;
+}
+
+#sq21 {
+    grid-column: 2 /span 1;
+    grid-row: 8 /span 1;
+}
+
+#sq22 {
+    grid-column: 1 /span 1;
+    grid-row: 8 /span 1;
+}
+
+#sq23 {
+    grid-column: 1 /span 1;
+    grid-row: 7 /span 1;
+}
+
+#sq24 {
+    grid-column: 1 /span 1;
+    grid-row: 6 /span 1;
+}
+
+#sq25 {
+    grid-column: 1 /span 1;
+    grid-row: 5 /span 1;
+}
+
+#sq26 {
+    grid-column: 1 /span 1;
+    grid-row: 4 /span 1;
+}
+
+#sq27 {
+    grid-column: 1 /span 1;
+    grid-row: 3 /span 1;
+}
+
+#sq28 {
+    grid-column: 1 /span 1;
+    grid-row: 2 /span 1;
+}
