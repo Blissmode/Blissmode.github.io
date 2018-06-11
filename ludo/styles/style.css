@@ -32,6 +32,19 @@ body {
     grid-column: 4 /span 2;
     grid-row: 5 / span 1;
     margin: 10px 5px;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p , span {
+    text-align: center;
+}
+
+#rolldisable {
+    grid-column: 4 /span 2;
+    grid-row: 5 / span 1;
+    margin: 10px 5px;
+    display: none;
+    overflow: auto;
 }
 
 #rollResult {
@@ -48,6 +61,28 @@ body {
 h3 {
     margin-top: 0px;
 }
+
+#resultEnd {
+    display: none;
+  }
+  
+blockquote {
+    font-size: 40px;
+    border-left-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
