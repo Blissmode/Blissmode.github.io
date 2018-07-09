@@ -1,0 +1,79 @@
+body {
+    background-image:url(../images/bkgnd2.jpg);
+    background-repeat: repeat-y;
+    background-size:cover;
+}
+
+#navigation {
+    background:black;
+    height: 30px;
+    width : 100%;
+    position: fixed;
+}
+
+center {
+    text-align: center;
+    font-size: 1vw;
+    font: 'Merienda One', Helvetica, sans-serif;
+    color: pink;
+    text-shadow: 3px 3px 3px #fff;
+    -webkit-transition: font-size 2s;
+    transition: font-size 2s;
+}
+
+center:hover {
+    font-size: 2vw;
+}
+ul {
+    list-style-type: none;
+    background: black;
+    width: auto;
+    margin:0;
+    padding: 0;
+}
+
+li a {
+    text-align: center;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    background: black;
+    width:25%;
+    float: left;
+    font-size: 20px;
+}
+
+li a:hover {
+    background:darkgray;
+    text-align: center;
+}
+
+.active {
+    background: red;
+}
+
+p {
+    text-align: center;
+    font-size: 6vw;
+    font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+    color: pink;
+    text-shadow: 3px 3px 3px #fff;
+    -webkit-transition: font-size 2s;
+    transition: font-size 2s;
+}
+
+p:hover {
+    font-size: 8vw;
+}
+
+#Intro  {
+    text-align: center;
+    font-size: 40px;
+    font: arial;
+    color: purple;
+}
+
+#small {
+    font-size: 30px;
+}
