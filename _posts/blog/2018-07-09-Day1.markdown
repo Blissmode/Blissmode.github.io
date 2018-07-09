@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Day 1 [HDOC]"
+date:   2018-07-09 14:20:11
+categories: [ blog , hdoc ]
+---
+After a short(3 hour) Pani-Puri break, am all set with my keyboard!

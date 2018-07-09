@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>N Krithick Santhosh</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="kudos.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+
+  <a href="#" class="back-to-top">Back To Top</a>
+<div id="container" class="logo"></div>
+<header id="h_small">
+    <nav id="nav_small">
+        <a href="/#about-me">About Me</a>
+        <a href="/#Experenice">Experience</a>
+        <a href="/#Blog">Blog</a>
+        <a href="/#Details">Contact Me</a>
+    </nav>
+</header>
+
+
+<script type="text/javascript">
+			// needs to be a string for jquery.cookie
+			var postId = '1';
+			$(function()
+			{
+				// initialize kudos
+				$("figure.kudoable").kudoable();
+				// check to see if user has already kudod
+				// fyi cookies do not work when you are viewing this as a file
+				if($.cookie(postId) == 'true') {
+					// make kudo already kudod
+					$("figure.kudoable").removeClass("animate").addClass("complete");
+					// your server would take care of the proper kudos count, but because this is a
+					// static page, we need to set it here so it doesn't become -1 when you remove
+					// the kudos after a reload
+					$(".num").html(1);
+				}
+				// when kudoing
+				$("figure.kudo").bind("kudo:active", function(e)
+				{
+					console.log("kudoing active");
+				});
+				// when not kudoing
+				$("figure.kudo").bind("kudo:inactive", function(e)
+				{
+					console.log("kudoing inactive");
+				});
+				// after kudo'd
+				$("figure.kudo").bind("kudo:added", function(e)
+				{
+					var element = $(this);
+					// ajax'y stuff or whatever you want
+					console.log("Kodo'd:", element.data('id'), ":)");
+					// set cookie so user cannot kudo again for 7 days
+					$.cookie(postId, 'true', { expires: 7 });
+				});
+				// after removing a kudo
+				$("figure.kudo").bind("kudo:removed", function(e)
+				{
+					var element = $(this);
+					// ajax'y stuff or whatever you want
+					console.log("Un-Kudo'd:", element.data('id'), ":(");
+					// remove cookie
+					$.removeCookie(postId);
+				});
+			});
+		</script>
+
+
+
+<div class="post-header">
+  <h1 class="post-title">Hundred Days of Coding: Pilot</h1>
+</div>
+<div class="post-header">
+  <p class="post-meta">July 9, 2018 — 17:21</p>
+</div>
+
+<div class="post-wrapper">
+
+
+
+  <article class="post-content">
+    <div class = "blurb-blog">
+    <p>Lets be honest with ourselves, We procrastinate a lot. And talking about me, am on a whole new level. I had around 90 days to spare and I almost ended up coding in only 20 of them. What was I doing during the rest of the days? If you are guessing a word that starts with P, and a word that I probably used around a million times already, Yes. You are right.</p>
+
+<p>So as every other lazy homosapien, I too opened up this site that probably meant a one followed by an hundred zeros and searched &quot;How to be more productive&quot;. Yeah, this search appended one more to the list that read &quot;The various ways in which I wasted time today&quot;. Some of the tips were fine, suggesting me to avoid all distractions by installing apps. Few others suggested me to have &quot;Balanced Diet&quot; so that I can be more active throughout the day. The only thing I know balanced diet does, is make you more hungry.</p>
+
+<p>So I shut the lid of my laptop and started wondering, Why did Google, decide its name should be Google? I mean, they could have just kept their name as Billion, you know, short with nine zeros. Maybe they wanted to be huge, but then why did they just stop with hundred zeros, why not their inspiration taken from Centillion which has around three hundred zeros or why not something more? Maybe they just wanted to cool and felt Google is a cool name. Non-sense, Google starts with Goo and Centillion does sound a lot cooler. It definetly must have something to do with hundred, If not Google would have been Centi-something.</p>
+
+<p>Just then had I realized that I had drifted too far away from what I was initially doing and ended up wasting a lot more of time. But this hundred logic kinda stuck in me, Was larry page too wasting his time and some how Google was related to it? Did he create Google in googol amount of hours? Nope ridiculous, Cause thats almost equivalent to 1.41 into ten raised to 96 which is heavens lot bigger than Big Bang to now. Did he do something continously for hundred straight hours? What if I did something hundred hours straight? Then the idea struck me, What if I did something 100 days straight?</p>
+
+<p>I did waste around hundred days now, What what if I grew a bit every single day for the next hundred days? Thats were this idea struck, What if I did some serious programming for the next hundred staright days. I knew that atleast during some point of time I shall start (darn, here it comes again) doing the P word again, and stuff giving a rat&#39;s ass about this plan, but what if I document everything and put it out on my blog so that I am reminded that I need to learn something everyday?</p>
+
+<p>Thus HDOC began, Hundred Days Of Coding. I am pretty much excited already because I know that if this thing succeeds, I shall have done enormous amount of knowledge at the end of this period. This is what I am before this whole thing started:</p>
+
+<p>Codechef Rating: 1771 (3 star) <br>
+Codeforces Rating: 1459 (Specialist)</p>
+
+<p>I ran out straight too my calender and counted out hundreds days from today, and it showed me October 16th. It is pretty much right through my Mid-semester exainations, but if I stay regular everyday, I guess it shalln&#39;t affect me much. Hence, I begin today.</p>
+
+<p>If you read this far, I know, you probably didnot gain any bit of knowledge, and I probably succeeded in wasting your time (evil guy here :P). But something that you can take away from here is... Why not join me in doing this? You know, Its always fun together!</p>
+
+<p>So let me start... Maybe after a Pani puri, you know, it defines taste here in Kalpakkam and I shall probably not have anything as tasty as this till I comeback from insti. Wait, Did I just plan to procrastinate AGAIN?</p>
+
+   </div>
+  </article>
+
+
+</div>
+<div class="comment">
+  
+  </div>
+
+  <footer>
+    <div class="lockup">
+        <div class="content-wrap">
+            <nav>
+                <a href="/">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#Experenice">Experience</a>
+                <a href="#Blog">Blog</a>
+                <a href="#Details">Contact Me</a>
+            </nav>
+            <p class="copyright">Blissmode 2018</p>
+        </div>
+    </div>
+</footer>
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/functions.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/modernizr.js"></script>
+  <script src="assets/js/kudos.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70467029-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

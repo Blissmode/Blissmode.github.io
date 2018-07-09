@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Hundred Days of Coding: Pilot"
+date:   2018-07-09 11:51:11
+categories: [ blog , hdoc ]
+---
+
+
+Lets be honest with ourselves, We procrastinate a lot. And talking about me, am on a whole new level. I had around 90 days to spare and I almost ended up coding in only 20 of them. What was I doing during the rest of the days? If you are guessing a word that starts with P, and a word that I probably used around a million times already, Yes. You are right.
+
+So as every other lazy homosapien, I too opened up this site that probably meant a one followed by an hundred zeros and searched "How to be more productive". Yeah, this search appended one more to the list that read "The various ways in which I wasted time today". Some of the tips were fine, suggesting me to avoid all distractions by installing apps. Few others suggested me to have "Balanced Diet" so that I can be more active throughout the day. The only thing I know balanced diet does, is make you more hungry.
+
+So I shut the lid of my laptop and started wondering, Why did Google, decide its name should be Google? I mean, they could have just kept their name as Billion, you know, short with nine zeros. Maybe they wanted to be huge, but then why did they just stop with hundred zeros, why not their inspiration taken from Centillion which has around three hundred zeros or why not something more? Maybe they just wanted to cool and felt Google is a cool name. Non-sense, Google starts with Goo and Centillion does sound a lot cooler. It definetly must have something to do with hundred, If not Google would have been Centi-something.
+
+Just then had I realized that I had drifted too far away from what I was initially doing and ended up wasting a lot more of time. But this hundred logic kinda stuck in me, Was larry page too wasting his time and some how Google was related to it? Did he create Google in googol amount of hours? Nope ridiculous, Cause thats almost equivalent to 1.41 into ten raised to 96 which is heavens lot bigger than Big Bang to now. Did he do something continously for hundred straight hours? What if I did something hundred hours straight? Then the idea struck me, What if I did something 100 days straight?
+
+I did waste around hundred days now, What what if I grew a bit every single day for the next hundred days? Thats were this idea struck, What if I did some serious programming for the next hundred staright days. I knew that atleast during some point of time I shall start (darn, here it comes again) doing the P word again, and stuff giving a rat's ass about this plan, but what if I document everything and put it out on my blog so that I am reminded that I need to learn something everyday?
+
+Thus HDOC began, Hundred Days Of Coding. I am pretty much excited already because I know that if this thing succeeds, I shall have done enormous amount of knowledge at the end of this period. This is what I am before this whole thing started:
+
+Codechef Rating: 1771 (3 star) <br>
+Codeforces Rating: 1459 (Specialist)
+
+I ran out straight too my calender and counted out hundreds days from today, and it showed me October 16th. It is pretty much right through my Mid-semester exainations, but if I stay regular everyday, I guess it shalln't affect me much. Hence, I begin today.
+
+If you read this far, I know, you probably didnot gain any bit of knowledge, and I probably succeeded in wasting your time (evil guy here :P). But something that you can take away from here is... Why not join me in doing this? You know, Its always fun together!
+
+So let me start... Maybe after a Pani puri, you know, it defines taste here in Kalpakkam and I shall probably not have anything as tasty as this till I comeback from insti. Wait, Did I just plan to procrastinate AGAIN?
+

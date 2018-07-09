@@ -4,10 +4,12 @@
 	src: url("0-tools/flaticon.eot#iefix") format("embedded-opentype"),
 	url("0-tools/flaticon.woff") format("woff"),
 	url("0-tools/flaticon.ttf") format("truetype"),
-	url("0-tools/flaticon.svg") format("svg");
+	url("0-tools/flaticon.svg") format("svg"),
+	url("0-tools/instagram-logo.svg") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
+
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
 	font-family: Flaticon;
