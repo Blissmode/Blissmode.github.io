@@ -1,7 +1,43 @@
 ---
 layout: post
-title:  "Day 1 [HDOC]"
+title:  "Day 1: Let's Graph some stuff! [HDOC]"
 date:   2018-07-09 14:20:11
 categories: [ blog , hdoc ]
 ---
+
+<style>
+    table,tr,td,th{
+        border:1px solid black;
+        margin: auto;
+        padding:3px;
+        text-align:center;
+    }
+</style>
 After a short(3 hour) Pani-Puri break, am all set with my keyboard!
+
+I open up <a href="https://lagunita.stanford.edu/courses/course-v1:Engineering+Algorithms1+SelfPaced/courseware/0f7712cedcae4183ac98659cadcc12da/e39edf004adc402eb793d6909fb60d30/" target="_blank">Stanford's course on Algorithms</a> on their official site as this one provides a free certification along with it.
+
+The topic that I plan for today is "Graphs".
+
+For those of you who are new to this term in computer science would probably think of us sketching grpahs to determine a variety of quantities like the zero of the polynomial, the part where a function reaches maximum etc. The graph that we are talking about now is a <b>Pairwise relationship between objects</b>. You can draw some analogy that every point in the graph represents the value taken by the function (represented in y-axis) for every input value(represented in x-axis). You realize that this is indeed a pairwise relationship, and hence the term "Graph".
+
+Lets think about graphs as networks, Networks of say, a lot of people. In terms of graph, each component is called a <b>Node</b> or a <b>Vertex</b>. Here every person is a vertex. Now two of them might be good friends, or enemies, or even <a href="https://www.youtube.com/watch?v=Ey_hgKCCYU4" target="_blank">perfect strangers</a>. Either way, the share a relationship. The graph term for this is <b>Edges</b>. 
+
+A directed graph is something in which the relationship is mutual, as if two people are friends on fb. A undirected graph, is the opposite, such as a celebrity crush, where in the celebrity might not even know you. That kind of sums up all the basic terms used in graph. The problem that was taken up in the course was the Min-cut problem. Something that determines the minimum number of cuts that we shall cause. For example, lets take the human network scenario. Lets say you are a person who is unhappily single and you plan to break other peoples relationships. But you being not that much of a sadist, you want to break as minimum of relationships as possible. You breaking a single relationship could have side effects on the other relationships, and you need to aware of that. This is kind of a loose example of the Min cut problem, but you get the idea.
+
+A graph can be implemented using two ways, An adjacency list and an adjacency matrix. An adjacency matrix is a asquare matrix such that, if a[i][j] is set, then a edge exists between i and j. An adjacency list is where you dynamically update the list of edges such that the space complexity is O(m+n){where m is number od nodes and n is number of edges} on encountering an edge. A list is usually prefered over a matrix because the space complexity of a matrix is O(n<sup>2</sup>) and in cases where the value of n ranges in millions, this is fairly not possible to achieve. An Adjacency matrix is preferred only and only if the number of nodes are relatively less and the number of querying to the graph is high since a query takes unit time to execute in this case.
+
+Between this, I take a small detour to practise in a codeforces contest which was held for Div 3. The first two were fairly easy and didnot require much effort. The third question required me to use binary search along with bit analysis also can be rated easy and the fourth question required the basic understanding that a number divisible by 3 has its sum of digits also divisible by 3. 
+
+Next I read something about the randomized contraction algorithm for evaluvating min-cut, which I guess I wont be writing down about because it totally made no sense.
+
+I guess I shall be calling it a day here cause its 1 am already and I should totally get some sleep. Here goes the analysis for today
+
+<table>
+<tr>
+<th> Problems Solved </th><th> Beginnerer </th><th> Easy </th><th> Medium </th>
+</tr>
+<tr>
+<td>4</td><td>2</td><td>2</td><td>-</td>
+</tr>
+</table>
