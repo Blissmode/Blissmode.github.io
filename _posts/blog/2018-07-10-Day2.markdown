@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Day 2: Randomly cut through! [HDOC]"
+date:   2018-07-10 22:20:11
+categories: [ blog , hdoc , graph]
+---
+
+<style>
+    table,tr,td,th{
+        border:1px solid black;
+        margin: auto;
+        padding:3px;
+        text-align:center;
+    }
+</style>
+
+The day pretty much starts with me trying to break my head over a problem on long contest because I noticed that my rank was soaring in the wrong direction. I finally solved one problem which I might classify as easy, but is one of the best questions on probability that I had ever seen. Since the contest is going on, I shall not write much about it, but it is one problem all of you must try! I then return to my original schedule since now am assured that my rating would not drop. 
+
+Its randomized algo again, and if you followed my last blog post, you probably know how much I hate these kind of stuff. Because it doesn't always give you the required answer! Imagine a country raging war over another country, and the other country discovers using this random min-cut algo that if they destroy two of their roads they are safe. Then they go ahead to destroy two of their important roads and feel happy about it. Next day they wake up with their country half destroyed because their random algo picked the wrong roads! 
+
+Let me just tell you what the algorithm is. So given a graph, that is fully connected, That is it has just one connected componenet, do the following steps:-
+<br>
+- Until there are only 2 nodes left, choose an existing edge.
+- Compress the vertices that make up that edge into a single node, remove all the parallel edge, that is any existing edge(relation) between them.
+- When there are only two nodes left, The number of edges correspond to the mincut.
+
+Now here is the problem. If we choose any edge that was supposed to exist in the min-cut, you end up destroying all of edges corresponding to the min-cut. Lets say the mincut value is k and we have m other edges, The possibility that we go wrong on the first try is k/m, and with firther analysis on this line including probability for every subsequent step until n-2 nodes remain, you realize that the probability you shall be right about the mincut, is as low as one over n<sup>2</sup>.
+
+Magically, if we some how know which edge corresponds to the min-cut, we never shall go wrong as we never choose them. Imagine two islands and k number of bridges connecting them, If every road we choose to destroy(an edge) does not happen to be a bridge(the min-cut edge), then we shall be cool right? After all the connectivity between the islands are still intact! Thats precisely the workaround. Given a graph, we find the two most tightly connected componenets. I shall probably cover the topic of strongly connected componenets soon, but for now lets take it as those set of nodes which comprise of the maximum density of edges. After we find these two components, we compress each component among itself such that only one component remain in each of them. 
+
+Lets look at the overall picture of what we did here. We compressed a lot of nodes until only two of them remain, and we never touched any of the edges that correspond to the min-cut. And you realize already, that the number of edges between those two remaining nodes, perfectly give us the value of min-cut. I then go ahead to solve <a href="https://www.hackerearth.com/practice/algorithms/graphs/min-cut/tutorial/" target="_blank">this tutorial question</a> on hackerearth so that I am sure I completely understood what I read so far.
+
+So what do you take away from this apart from the fact that randomized algorithms can some times be cool? Did you ever realize that these are analogous to what life is? You have heavens lot of choices to make everyday. You make some good ones along the way, you screw some. But when constrained the way you make those choices such that you are sure you are not making a terribly mistake by making that choice, you apparently reach what we define as "success". You do have a lot of choices to make in life, make them well. I should have given a philosophy alert, but yup, I shall give one the next time I make a post well in advance, for now, thanks for bearing with me!
+
+Today wasn't that great for me in terms of number of problems solved, but I did gain a lot of knowledge. So here goes:-
+
+<table>
+<tr>
+<th> Problems Solved </th><th> Beginnerer </th><th> Easy </th><th> Medium </th>
+</tr>
+<tr>
+<td>2</td><td>-</td><td>1</td><td>1</td>
+</tr>
+</table>
+
