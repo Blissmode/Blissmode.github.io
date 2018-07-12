@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Day 3: Need answers? Search them! [HDOC]"
+date:   2018-07-11 22:20:11
+categories: [ blog , hdoc , graph]
+---
+
+<style>
+    table,tr,td,th{
+        border:1px solid black;
+        margin: auto;
+        padding:3px;
+        text-align:center;
+    }
+</style>
+
+
+<b>Ultra unproductive day today!</b>
+
+But I went through one of my favourite topics in Algorithms, Graph searching. Now what makes it my favourite? This guy, is the master of disguises. He can appear in any form, any where, he would stand right infront of you and you still wouldn't know. Yup, he is graph search.
+
+To be completely honest about myself, I have never ever solved a single graph problem till now apart from the tutorial questions on Hackerearth. This might be the reason why I dont properly recognsie graph problems, because this one requires heavens lot of practise. So lets just begin by going through the two basic techniques of Graph search, <b>BFS</b> and <b>DFS</b>.
+
+Lets begin in with BFS. 
+Imagine the results of a test had just come out, and everyone has got their papers to check their marks. You are pretty sure you almost topped the test but you aren't yet completely sure of it. So you plan to start asking around the mark of everyone. But this shall sure make you feel lame. So what you plan to do is <b>ask your neighours</b> or the ones who are closest to you on what their marks are, and you tell them to ask around their neighbours. Basically what you are doing here, is a <b>Breath</b> first search(BFS). You query your neighbouring nodes on what their output is on the layer of neighbours around you, and you tell them to do the same. SO on each successive new layer searches, you finally end up traversing through your whole class, just by asking your neighbours.
+
+Now how would you implement this? We maintain a Queue that tracks every single node that has been visited and is yet to do their part of querying. So at the begining, we push in the node that we intend to start the search from, we then go theough all its neighbours and check if the condition is reached. Just so that we don't do redundant stuff, we maintain a boolean array that notes if a node is visied or not. On traversing through every single neighbour we push in all of them into the queue and pop out the node that just finished querying. We go through the process again by popping out the next node in the queue. This shall go on, until every single node has been marked visited on the boolean array. And once this condition is reached, we are done.
+<a href="https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/tutorial/" target="_blank">Click here to see the implementation of BFS</a>
+
+DFS on the other hand is a more argressive sibling of BFS. We would have all done a DFS atleast in some point of our time, Consider solving a maze. We first go in through a chosen route and determine that route leads us to the exit or not. We do so by blindly going in that route, and retracing once we reach a deadend. DFS does exactly that. It searches for the requirements through the depths of the graph, and only retraces when absolutely necessary. 
+
+We can implement this using a recursice approach where in we call a DFS search, every single time we we encounter a new node that hasn't been previously visited. 
+<a href="https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/" target="_blank">Click here to see the implementation of BFS</a>
+
+Which is better? Honestly, it depends on the problem and we cant draw any clear cut conclusion because both work on O(m+n), because we seach from every single node visiting each exactly once. 
+
+That's all for today, Because the wimbledon quaterfinals had both my favourites Nadal and Delpotro going head on each other, and I just couldn't stop myself from watching that amazing match. So I skipped all problem solving for today. But shall surely do atleast a dozen tomorrow!
+

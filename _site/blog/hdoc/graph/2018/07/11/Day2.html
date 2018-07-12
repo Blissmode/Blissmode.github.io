@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>N Krithick Santhosh</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="kudos.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+
+  <a href="#" class="back-to-top">Back To Top</a>
+<div id="container" class="logo"></div>
+<header id="h_small">
+    <nav id="nav_small">
+        <a href="/#about-me">About Me</a>
+        <a href="/#Experenice">Experience</a>
+        <a href="/#Blog">Blog</a>
+        <a href="/#Details">Contact Me</a>
+    </nav>
+</header>
+
+
+<script type="text/javascript">
+			// needs to be a string for jquery.cookie
+			var postId = '1';
+			$(function()
+			{
+				// initialize kudos
+				$("figure.kudoable").kudoable();
+				// check to see if user has already kudod
+				// fyi cookies do not work when you are viewing this as a file
+				if($.cookie(postId) == 'true') {
+					// make kudo already kudod
+					$("figure.kudoable").removeClass("animate").addClass("complete");
+					// your server would take care of the proper kudos count, but because this is a
+					// static page, we need to set it here so it doesn't become -1 when you remove
+					// the kudos after a reload
+					$(".num").html(1);
+				}
+				// when kudoing
+				$("figure.kudo").bind("kudo:active", function(e)
+				{
+					console.log("kudoing active");
+				});
+				// when not kudoing
+				$("figure.kudo").bind("kudo:inactive", function(e)
+				{
+					console.log("kudoing inactive");
+				});
+				// after kudo'd
+				$("figure.kudo").bind("kudo:added", function(e)
+				{
+					var element = $(this);
+					// ajax'y stuff or whatever you want
+					console.log("Kodo'd:", element.data('id'), ":)");
+					// set cookie so user cannot kudo again for 7 days
+					$.cookie(postId, 'true', { expires: 7 });
+				});
+				// after removing a kudo
+				$("figure.kudo").bind("kudo:removed", function(e)
+				{
+					var element = $(this);
+					// ajax'y stuff or whatever you want
+					console.log("Un-Kudo'd:", element.data('id'), ":(");
+					// remove cookie
+					$.removeCookie(postId);
+				});
+			});
+		</script>
+
+
+
+<div class="post-header">
+  <h1 class="post-title">Day 2: Randomly cut through! [HDOC]</h1>
+</div>
+<div class="post-header">
+  <p class="post-meta">July 11, 2018 — 03:50</p>
+</div>
+
+<div class="post-wrapper">
+
+
+
+  <article class="post-content">
+    <div class = "blurb-blog">
+    <style>
+    table,tr,td,th{
+        border:1px solid black;
+        margin: auto;
+        padding:3px;
+        text-align:center;
+    }
+</style>
+
+<p>The day pretty much starts with me trying to break my head over a problem on long contest because I noticed that my rank was soaring in the wrong direction. I finally solved one problem which I might classify as easy, but is one of the best questions on probability that I had ever seen. Since the contest is going on, I shall not write much about it, but it is one problem all of you must try! I then return to my original schedule since now am assured that my rating would not drop. </p>
+
+<p>Its randomized algo again, and if you followed my last blog post, you probably know how much I hate these kind of stuff. Because it doesn&#39;t always give you the required answer! Imagine a country raging war over another country, and the other country discovers using this random min-cut algo that if they destroy two of their roads they are safe. Then they go ahead to destroy two of their important roads and feel happy about it. Next day they wake up with their country half destroyed because their random algo picked the wrong roads! </p>
+
+<p>Let me just tell you what the algorithm is. So given a graph, that is fully connected, That is it has just one connected componenet, do the following steps:-
+<br>
+- Until there are only 2 nodes left, choose an existing edge.
+- Compress the vertices that make up that edge into a single node, remove all the parallel edge, that is any existing edge(relation) between them.
+- When there are only two nodes left, The number of edges correspond to the mincut.</p>
+
+<p>Now here is the problem. If we choose any edge that was supposed to exist in the min-cut, you end up destroying all of edges corresponding to the min-cut. Lets say the mincut value is k and we have m other edges, The possibility that we go wrong on the first try is k/m, and with firther analysis on this line including probability for every subsequent step until n-2 nodes remain, you realize that the probability you shall be right about the mincut, is as low as one over n<sup>2</sup>.</p>
+
+<p>Magically, if we some how know which edge corresponds to the min-cut, we never shall go wrong as we never choose them. Imagine two islands and k number of bridges connecting them, If every road we choose to destroy(an edge) does not happen to be a bridge(the min-cut edge), then we shall be cool right? After all the connectivity between the islands are still intact! Thats precisely the workaround. Given a graph, we find the two most tightly connected componenets. I shall probably cover the topic of strongly connected componenets soon, but for now lets take it as those set of nodes which comprise of the maximum density of edges. After we find these two components, we compress each component among itself such that only one component remain in each of them. </p>
+
+<p>Lets look at the overall picture of what we did here. We compressed a lot of nodes until only two of them remain, and we never touched any of the edges that correspond to the min-cut. And you realize already, that the number of edges between those two remaining nodes, perfectly give us the value of min-cut. I then go ahead to solve <a href="https://www.hackerearth.com/practice/algorithms/graphs/min-cut/tutorial/" target="_blank">this tutorial question</a> on hackerearth so that I am sure I completely understood what I read so far.</p>
+
+<p>So what do you take away from this apart from the fact that randomized algorithms can some times be cool? Did you ever realize that these are analogous to what life is? You have heavens lot of choices to make everyday. You make some good ones along the way, you screw some. But when constrained the way you make those choices such that you are sure you are not making a terribly mistake by making that choice, you apparently reach what we define as &quot;success&quot;. You do have a lot of choices to make in life, make them well. I should have given a philosophy alert, but yup, I shall give one the next time I make a post well in advance, for now, thanks for bearing with me!</p>
+
+<p>Today wasn&#39;t that great for me in terms of number of problems solved, but I did gain a lot of knowledge. So here goes:-</p>
+
+<table>
+<tr>
+<th> Problems Solved </th><th> Beginnerer </th><th> Easy </th><th> Medium </th>
+</tr>
+<tr>
+<td>2</td><td>-</td><td>1</td><td>1</td>
+</tr>
+</table>
+
+   </div>
+  </article>
+
+
+</div>
+<div class="comment">
+  
+  </div>
+
+  <footer>
+    <div class="lockup">
+        <div class="content-wrap">
+            <nav>
+                <a href="/">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#Experenice">Experience</a>
+                <a href="#Blog">Blog</a>
+                <a href="#Details">Contact Me</a>
+            </nav>
+            <p class="copyright">Blissmode 2018</p>
+        </div>
+    </div>
+</footer>
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/functions.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/modernizr.js"></script>
+  <script src="assets/js/kudos.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70467029-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

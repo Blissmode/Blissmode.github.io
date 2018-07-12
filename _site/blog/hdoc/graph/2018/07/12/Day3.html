@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>N Krithick Santhosh</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="kudos.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+
+  <a href="#" class="back-to-top">Back To Top</a>
+<div id="container" class="logo"></div>
+<header id="h_small">
+    <nav id="nav_small">
+        <a href="/#about-me">About Me</a>
+        <a href="/#Experenice">Experience</a>
+        <a href="/#Blog">Blog</a>
+        <a href="/#Details">Contact Me</a>
+    </nav>
+</header>
+
+
+<script type="text/javascript">
+			// needs to be a string for jquery.cookie
+			var postId = '1';
+			$(function()
+			{
+				// initialize kudos
+				$("figure.kudoable").kudoable();
+				// check to see if user has already kudod
+				// fyi cookies do not work when you are viewing this as a file
+				if($.cookie(postId) == 'true') {
+					// make kudo already kudod
+					$("figure.kudoable").removeClass("animate").addClass("complete");
+					// your server would take care of the proper kudos count, but because this is a
+					// static page, we need to set it here so it doesn't become -1 when you remove
+					// the kudos after a reload
+					$(".num").html(1);
+				}
+				// when kudoing
+				$("figure.kudo").bind("kudo:active", function(e)
+				{
+					console.log("kudoing active");
+				});
+				// when not kudoing
+				$("figure.kudo").bind("kudo:inactive", function(e)
+				{
+					console.log("kudoing inactive");
+				});
+				// after kudo'd
+				$("figure.kudo").bind("kudo:added", function(e)
+				{
+					var element = $(this);
+					// ajax'y stuff or whatever you want
+					console.log("Kodo'd:", element.data('id'), ":)");
+					// set cookie so user cannot kudo again for 7 days
+					$.cookie(postId, 'true', { expires: 7 });
+				});
+				// after removing a kudo
+				$("figure.kudo").bind("kudo:removed", function(e)
+				{
+					var element = $(this);
+					// ajax'y stuff or whatever you want
+					console.log("Un-Kudo'd:", element.data('id'), ":(");
+					// remove cookie
+					$.removeCookie(postId);
+				});
+			});
+		</script>
+
+
+
+<div class="post-header">
+  <h1 class="post-title">Day 3: Need answers? Search them! [HDOC]</h1>
+</div>
+<div class="post-header">
+  <p class="post-meta">July 12, 2018 — 03:50</p>
+</div>
+
+<div class="post-wrapper">
+
+
+
+  <article class="post-content">
+    <div class = "blurb-blog">
+    <style>
+    table,tr,td,th{
+        border:1px solid black;
+        margin: auto;
+        padding:3px;
+        text-align:center;
+    }
+</style>
+
+<p><b>Ultra unproductive day today!</b></p>
+
+<p>But I went through one of my favourite topics in Algorithms, Graph searching. Now what makes it my favourite? This guy, is the master of disguises. He can appear in any form, any where, he would stand right infront of you and you still wouldn&#39;t know. Yup, he is graph search.</p>
+
+<p>To be completely honest about myself, I have never ever solved a single graph problem till now apart from the tutorial questions on Hackerearth. This might be the reason why I dont properly recognsie graph problems, because this one requires heavens lot of practise. So lets just begin by going through the two basic techniques of Graph search, <b>BFS</b> and <b>DFS</b>.</p>
+
+<p>Lets begin in with BFS. 
+Imagine the results of a test had just come out, and everyone has got their papers to check their marks. You are pretty sure you almost topped the test but you aren&#39;t yet completely sure of it. So you plan to start asking around the mark of everyone. But this shall sure make you feel lame. So what you plan to do is <b>ask your neighours</b> or the ones who are closest to you on what their marks are, and you tell them to ask around their neighbours. Basically what you are doing here, is a <b>Breath</b> first search(BFS). You query your neighbouring nodes on what their output is on the layer of neighbours around you, and you tell them to do the same. SO on each successive new layer searches, you finally end up traversing through your whole class, just by asking your neighbours.</p>
+
+<p>Now how would you implement this? We maintain a Queue that tracks every single node that has been visited and is yet to do their part of querying. So at the begining, we push in the node that we intend to start the search from, we then go theough all its neighbours and check if the condition is reached. Just so that we don&#39;t do redundant stuff, we maintain a boolean array that notes if a node is visied or not. On traversing through every single neighbour we push in all of them into the queue and pop out the node that just finished querying. We go through the process again by popping out the next node in the queue. This shall go on, until every single node has been marked visited on the boolean array. And once this condition is reached, we are done.
+<a href="https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/tutorial/" target="_blank">Click here to see the implementation of BFS</a></p>
+
+<p>DFS on the other hand is a more argressive sibling of BFS. We would have all done a DFS atleast in some point of our time, Consider solving a maze. We first go in through a chosen route and determine that route leads us to the exit or not. We do so by blindly going in that route, and retracing once we reach a deadend. DFS does exactly that. It searches for the requirements through the depths of the graph, and only retraces when absolutely necessary. </p>
+
+<p>We can implement this using a recursice approach where in we call a DFS search, every single time we we encounter a new node that hasn&#39;t been previously visited. 
+<a href="https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/" target="_blank">Click here to see the implementation of BFS</a></p>
+
+<p>Which is better? Honestly, it depends on the problem and we cant draw any clear cut conclusion because both work on O(m+n), because we seach from every single node visiting each exactly once. </p>
+
+<p>That&#39;s all for today, Because the wimbledon quaterfinals had both my favourites Nadal and Delpotro going head on each other, and I just couldn&#39;t stop myself from watching that amazing match. So I skipped all problem solving for today. But shall surely do atleast a dozen tomorrow!</p>
+
+   </div>
+  </article>
+
+
+</div>
+<div class="comment">
+  
+  </div>
+
+  <footer>
+    <div class="lockup">
+        <div class="content-wrap">
+            <nav>
+                <a href="/">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#Experenice">Experience</a>
+                <a href="#Blog">Blog</a>
+                <a href="#Details">Contact Me</a>
+            </nav>
+            <p class="copyright">Blissmode 2018</p>
+        </div>
+    </div>
+</footer>
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/functions.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/modernizr.js"></script>
+  <script src="assets/js/kudos.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70467029-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
