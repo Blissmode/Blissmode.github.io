@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>N Krithick Santhosh</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="kudos.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+
+  <a href="#" class="back-to-top">Back To Top</a>
+<div id="container" class="logo"></div>
+<header id="h_small">
+    <nav id="nav_small">
+        <a href="/#about-me">About Me</a>
+        <a href="/#Experenice">Experience</a>
+        <a href="/#Blog">Blog</a>
+        <a href="/#Details">Contact Me</a>
+    </nav>
+</header>
+
+
+<script type="text/javascript">
+			// needs to be a string for jquery.cookie
+			var postId = '1';
+			$(function()
+			{
+				// initialize kudos
+				$("figure.kudoable").kudoable();
+				// check to see if user has already kudod
+				// fyi cookies do not work when you are viewing this as a file
+				if($.cookie(postId) == 'true') {
+					// make kudo already kudod
+					$("figure.kudoable").removeClass("animate").addClass("complete");
+					// your server would take care of the proper kudos count, but because this is a
+					// static page, we need to set it here so it doesn't become -1 when you remove
+					// the kudos after a reload
+					$(".num").html(1);
+				}
+				// when kudoing
+				$("figure.kudo").bind("kudo:active", function(e)
+				{
+					console.log("kudoing active");
+				});
+				// when not kudoing
+				$("figure.kudo").bind("kudo:inactive", function(e)
+				{
+					console.log("kudoing inactive");
+				});
+				// after kudo'd
+				$("figure.kudo").bind("kudo:added", function(e)
+				{
+					var element = $(this);
+					// ajax'y stuff or whatever you want
+					console.log("Kodo'd:", element.data('id'), ":)");
+					// set cookie so user cannot kudo again for 7 days
+					$.cookie(postId, 'true', { expires: 7 });
+				});
+				// after removing a kudo
+				$("figure.kudo").bind("kudo:removed", function(e)
+				{
+					var element = $(this);
+					// ajax'y stuff or whatever you want
+					console.log("Un-Kudo'd:", element.data('id'), ":(");
+					// remove cookie
+					$.removeCookie(postId);
+				});
+			});
+		</script>
+
+
+
+<div class="post-header">
+  <h1 class="post-title">Day 1: Let's Graph some stuff! [HDOC]</h1>
+</div>
+<div class="post-header">
+  <p class="post-meta">July 9, 2018 — 20:00</p>
+</div>
+
+<div class="post-wrapper">
+
+
+
+  <article class="post-content">
+    <div class = "blurb-blog">
+    <style>
+    table,tr,td,th{
+        border:1px solid black;
+        margin: auto;
+        padding:3px;
+        text-align:center;
+    }
+</style>
+
+<p>After a short(3 hour) Pani-Puri break, am all set with my keyboard!</p>
+
+<p>I open up <a href="https://lagunita.stanford.edu/courses/course-v1:Engineering+Algorithms1+SelfPaced/courseware/0f7712cedcae4183ac98659cadcc12da/e39edf004adc402eb793d6909fb60d30/" target="_blank">Stanford&#39;s course on Algorithms</a> on their official site as this one provides a free certification along with it.</p>
+
+<p>The topic that I plan for today is &quot;Graphs&quot;.</p>
+
+<p>For those of you who are new to this term in computer science would probably think of us sketching grpahs to determine a variety of quantities like the zero of the polynomial, the part where a function reaches maximum etc. The graph that we are talking about now is a <b>Pairwise relationship between objects</b>. You can draw some analogy that every point in the graph represents the value taken by the function (represented in y-axis) for every input value(represented in x-axis). You realize that this is indeed a pairwise relationship, and hence the term &quot;Graph&quot;.</p>
+
+<p>Lets think about graphs as networks, Networks of say, a lot of people. In terms of graph, each component is called a <b>Node</b> or a <b>Vertex</b>. Here every person is a vertex. Now two of them might be good friends, or enemies, or even <a href="https://www.youtube.com/watch?v=Ey_hgKCCYU4" target="_blank">perfect strangers</a>. Either way, the share a relationship. The graph term for this is <b>Edges</b>. </p>
+
+<p>A directed graph is something in which the relationship is mutual, as if two people are friends on fb. A undirected graph, is the opposite, such as a celebrity crush, where in the celebrity might not even know you. That kind of sums up all the basic terms used in graph. The problem that was taken up in the course was the Min-cut problem. Something that determines the minimum number of cuts that we shall cause. For example, lets take the human network scenario. Lets say you are a person who is unhappily single and you plan to break other peoples relationships. But you being not that much of a sadist, you want to break as minimum of relationships as possible. You breaking a single relationship could have side effects on the other relationships, and you need to aware of that. This is kind of a loose example of the Min cut problem, but you get the idea.</p>
+
+<p>A graph can be implemented using two ways, An adjacency list and an adjacency matrix. An adjacency matrix is a asquare matrix such that, if a[i][j] is set, then a edge exists between i and j. An adjacency list is where you dynamically update the list of edges such that the space complexity is O(m+n){where m is number od nodes and n is number of edges} on encountering an edge. A list is usually prefered over a matrix because the space complexity of a matrix is O(n<sup>2</sup>) and in cases where the value of n ranges in millions, this is fairly not possible to achieve. An Adjacency matrix is preferred only and only if the number of nodes are relatively less and the number of querying to the graph is high since a query takes unit time to execute in this case.</p>
+
+<p>Between this, I take a small detour to practise in a codeforces contest which was held for Div 3. The first two were fairly easy and didnot require much effort. The third question required me to use binary search along with bit analysis also can be rated easy and the fourth question required the basic understanding that a number divisible by 3 has its sum of digits also divisible by 3. </p>
+
+<p>Next I read something about the randomized contraction algorithm for evaluvating min-cut, which I guess I wont be writing down about because it totally made no sense.</p>
+
+<p>I guess I shall be calling it a day here cause its 1 am already and I should totally get some sleep. Here goes the analysis for today</p>
+
+<table>
+<tr>
+<th> Problems Solved </th><th> Beginnerer </th><th> Easy </th><th> Medium </th>
+</tr>
+<tr>
+<td>4</td><td>2</td><td>2</td><td>-</td>
+</tr>
+</table>
+
+   </div>
+  </article>
+
+
+</div>
+<div class="comment">
+  
+  </div>
+
+  <footer>
+    <div class="lockup">
+        <div class="content-wrap">
+            <nav>
+                <a href="/">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#Experenice">Experience</a>
+                <a href="#Blog">Blog</a>
+                <a href="#Details">Contact Me</a>
+            </nav>
+            <p class="copyright">Blissmode 2018</p>
+        </div>
+    </div>
+</footer>
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/functions.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/modernizr.js"></script>
+  <script src="assets/js/kudos.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70467029-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

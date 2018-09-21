@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Day 41: Not so greddy anyway! [HDOC]"
+date:   2018-07-26 22:20:11
+categories: [ blog , hdoc , random]
+---
+
+<style>
+    table,tr,td,th{
+        border:1px solid black;
+        margin: auto;
+        padding:3px;
+        text-align:center;
+    }
+</style>
+
+
+So I decided to restart writing short lines about the problems that I solved throughout the day.
+
+First for today was UVa 11220 which had a wierd problem statement regarding the way marriage system works in a particular country. The statement greedly allowed put a compulsion of marriage of a 2 year old kid to a 35 year old lady. The problem had a O(n) solution where you had to find the minimum element of the array.
+
+The next two were kinda easy greedy problems most of them having an O(1) solution once sorting is done. 
+
+The fouth problem was UVa 10718, which goes by the name Bit Mask. It was yet another simple greedy problem where bit traversal was required with given restrictions, Each test case had an O(1) solution which can be easily recognised.       
+
+<table>
+<tr>
+<th> Problems Solved </th><th> Beginnerer </th><th> Easy </th><th> Medium </th>
+</tr>
+<tr>
+<td>4</td><td>3</td><td>1</td><td>-</td>
+</tr>
+</table>

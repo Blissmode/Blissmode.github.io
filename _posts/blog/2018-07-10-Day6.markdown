@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Day 6: Need answers? Search them! [HDOC]"
+date:   2018-07-11 22:20:11
+categories: [ blog , hdoc , graph]
+---
+
+<style>
+    table,tr,td,th{
+        border:1px solid black;
+        margin: auto;
+        padding:3px;
+        text-align:center;
+    }
+</style>
+
+As I promised, all lazy writings shall be eradicated today. Plus I have also added Hyperlinks to the questions I solved so you won't have to search for them again.
+
+The first problem for today was <a href="https://www.spoj.com/problems/CANTON/" target="_blank"> Count on Cantor from SPOJ </a>. This is one of those problems which could be tagged as <i>implementation</i> in codeforces, no hardcore algo or workaround required, just implement what is asked. 
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Diagonal_argument.svg/429px-Diagonal_argument.svg.png" alt="cantot explanation">
+
+So above is the basic image of what you have to implement. given a term n, find what is the corresponding term in the Cantor series, which is the one represted by the arrows. We can easily notice that numerator increases while moving downwards and denominator increases while moving upwards. Also both alternatively increase or decrease while moving along the crosses. This could be hardcoded to get an AC, so yup it is pretty simple and I would rate it a beginner.
+
+I then went up to problems from DP. There is this highly interesting problem named GRID from codechef which I shall absolutely not say anything about because even if I utter a word about that problem, I shall spoil its beauty. And this is not lazy writing (for now...). The question was kinda framed in a way that confused me a lot and initially the question seemed too dumb and farfetched, but the second you realize the amazing version of DP it holds, you fall in love with DP all over again. This one is a must must must try! (medium)
+
+The next problem was FROGV from codechef. I had to find out if two frogs can communucate using intermediate frogs if their range of communication was give and all the frogs were alligned along the x-axis. Even though this could have been easily solved using Dp, I prefered to do this using DSU because I felt this method might get it done easier if I just go ahead and find the connected componenets. It was classified as easy.

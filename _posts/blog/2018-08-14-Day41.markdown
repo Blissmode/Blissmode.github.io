@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "A really rally random rant"
+date:   2018-08-14 12:54:45
+categories: [ blog ]
+---
+
+<style>
+    table,tr,td,th{
+        border:1px solid black;
+        margin: auto;
+        padding:3px;
+        text-align:center;
+    }
+</style>
+
+It was perfect so far. Competitive programming still looks like an angel to me. For one, it saves me from every single depressive moments. It did give me a lot of them but ever time I found out that a particular problem does not require me to do any complex four variable integral but just sum the array up, it kinda gives me an amazing feeling that I just can't describe with words. Remember the last time your crush called you and scolded you for no reason but then it later turned out to be prank because she just wanted to talk to you? Neither do I, but thats exactly how it feels when you see that green tick mark.
+
+Everytime I try to express myself out, people heavily try to remind me on what I am, what I should be, as if what I can be is never really defined and is something that is never meant to be. My compiler on the other hand, lets me be who I am. I might have coded those 70 lines in less than 5 minutes or maybe 2 hours, the compiler doesn't care. It just tells me where am going wrong and the best part, how I can correct myself. Both people and compiler, they know where am going wrong. They both have my source code in front of their eyes and they know exactly which line am going wrong. Both comment. I get offended on both their comments, but then, one of them told me how to improve myself.
+
+There are people who know exactly what I am, but expect me to be something totally different for my own good. Thanks for telling me though, but then, do realize that it is tough. Doesn't mean am not trying. I do. Maybe not this second, not this minute, not this hour either, but then, I am trying. Then there are those of you who have an alter ego infront of everyone else but then when its just the both of us in the room, you are a gem. If you are reading this, all I want you to know is that I prefer that gem over everything else in my life. It is that one gem I would never want to lose. But then, what shame do I bring you in front of others? 
+
+Then there are people who just don't care anymore. I was the tree when you were the caterpillar, I knew what exactly you needed, been there all along when you fed over every inch of me. You then spun an hard shell around you because you wanted to become better. Remember I didn't leave you then too. You hung on me, carried out your fight from within and once you were done, I am pleased to see the Butterfly that you had become. I still stayed a tree, swung with every breeze that hit me. You didnot care about me, after all what does the Butterfly have to do with my leaves, when there are all flowers around? Just know that I miss the caterpillar, I know there is no going back now. But then I do miss the catterpillar.
+
+Then there are people whom I constantly disappoint. You gave me every drop of water you had so that I could grow, I still have some 
+of those, but you need to understand that not all of those spherical structures can help me in becoming what I want to be. Its something different that I expect. I maybe just a tree but then am different from the rest. But then thanks for being there. Its because of you that my branchs spread so far today. Thanks again.
+
+Silly how that its people who depress me. Those same people whom I tagged some fancy stuff. Maybe thats how the world works. Maybe its because my attitude that my compiler doesn't understand and doesn't care about.
+
+Then there are people like you, who cheer me up with every incident that occurs. Thanks for being there always. Am stupid though, I waste you efforts and sit by that depressing Social media for hours watching every single post on people getting amazing interns other stuff through software development. I don't care. No matter how rewarding Software development is, Competitive is all I care about. I might not get a single ruppee out of it. But then its fun. Rememeber that 10 year old with an yellow colour rat like creature by his shoulders? He said that "No matter if you win or lose, all that matter is that you had fun". Ofcourse that 10 year old didnot have to worry about interns , job offers or getting that amazing Audi that you always dreamed of, but then he does have a point there. 40 days had past since I began the challenge with myself. I did strive a lot. I took one step towards the right direction, or atleast, I hope so. There is a lot more to write. Lot more to pour out through my fingers that swiftly glide between the space bar and other keys. Lot more on how I "expect"  this world to work. But then food at my hostel is amazing, and I want to call my mom. Maybe ask her the recipe to how she manages to cheer me up every time I talk to her. I get hurt though. Hurt on the thought that its probably me who is disappointing her.

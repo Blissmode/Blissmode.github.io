@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Day 42: Dynamic in all! [HDOC]"
+date:   2018-07-26 22:20:11
+categories: [ blog , hdoc , random]
+---
+
+<style>
+    table,tr,td,th{
+        border:1px solid black;
+        margin: auto;
+        padding:3px;
+        text-align:center;
+    }
+</style>
+
+I started yet again with Dynamic programming, but this time to mark the end of me learning this widely used irritating algorithm paradigm. Irritating unless you find the approach that is.
+
+So I planned to complete four basic problems in 1D DP today but I highly doubt I shall be successful because its already 8 pm now and I have solved just one.
+
+That one problem was a basic longest increasing subsequence problem where the where the starting point and ending point was to be given.
+
+
+
+<table>
+<tr>
+<th> Problems Solved </th><th> Beginnerer </th><th> Easy </th><th> Medium </th>
+</tr>
+<tr>
+<td>4</td><td>3</td><td>1</td><td>-</td>
+</tr>
+</table>
