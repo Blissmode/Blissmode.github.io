@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "ACM 2019 and more DP!"
+date:   2018-12-08 22:20:11
+categories: [ blog , dp]
+---
+
+<style>
+    table,tr,td,th{
+        border:1px solid black;
+        margin: auto;
+        padding:3px;
+        text-align:center;
+    }
+</style>
+
+I really wasn't going to write this blog post until tomorrow but I found some really amazing problems to discuss, so lets get onto it!!
+
+First of all, I lot count of HDOC. If you have been following my blog, you would know how lazy I am in correcting typos and also about Hundred days of Code (HDOC) plan that I had made. It was a total flop. Nevertheless a lot of stuff happened in these two months and the most important ones among the are... wait for it... <b>I cleared ACM ICPC online!</b> 
+
+yup, you read that right :'). Even though my ratings only fell during this time, my speed remarkably improved leading me to make the 6th fastest submission for the first problem under nine minutes giving us a remarkable time advantage. And hence we are through, to the regionals which is about 30 days away.
+
+My semesters exams finally got over and am back home now. Hence am going to start with the topic am not so confident about, DP.
+
+So here is the method I wish for you to follow. When I metion the name of any question, read it first and try solving it because the ones coming up next definitely include the answer and method of solving the problems.
+
+Later this day I found that the codeforces website has a <a href="https://codeforces.com/problemset/standings" target="_blank">standings page</a> based on the number of problems solved. My current rank was 20329 at this moment so I kinda planned to keep track of where this number went by the end of ACM ICPC this month in about 20 days. I have solved 149 problems till now and I know it shall barely reach 200 by this time but lets see.
+
+<b>Problem 1</b>  118D Caesar's Legions
+There are n1 foot soldiers and n2 horsemen and we have to arrange them in a linear fashion such that there are no k1,k2 of each of them respectively continuos. 
+First of all if the constraints are observed, we notice that n1,n2<100 and k1,k2<10 so we can easily compute a dp of 4 states and evaluvate everything once and memotizing at each step. So in total we do a n1*n2*k1*k2<10<sup>6</sup> which can be comfortable done under 0.1s.
+
+<b>Problem 2</b> 839C Journey
+This is again a simple nearly linear dp on graphs. If we imagine the given case to be that of a tree, then every leaf node is the one in which the journey can possible end because of the way that the horse travels. And the possible length of the journey is <i>1 + length of journey till previous city</i>. The answer is of course the sum of these divided by the total number of leaf nodes.
+
+<b>Problem 3</b> Three displays
+This is somewhat similar to problem 1 and barely manages to pass the time limit, but the 3D dp on the states of current index, last chosen index and number of choices left does a pretty neat trick. There is also a two pointer solution which can solve this in n<sup>2,</sup> but since this is all about DP practice, I resort to memotization.
+
+Thats the end of the problems for the day because am really tired for some reason. Nevertheless, solving three problems got me up to a rank of 19936, gained 300 :P. 
+
+

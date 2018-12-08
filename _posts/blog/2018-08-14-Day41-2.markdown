@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Day 41: Not so greddy anyway! [HDOC]"
-date:   2018-07-26 22:20:11
+title:  "Day 41: Not so Greddy anyway! [HDOC]"
+date:   2018-08-14 22:20:11
 categories: [ blog , hdoc , random]
 ---
 
